@@ -196,6 +196,16 @@ Riesgo y severidad). Ver
 para instrucciones (incluido como ajustar la ruta de datos con el parametro
 `RutaDatos`).
 
+### Vista previa de las paginas
+
+**Pagina 1 - Resumen ejecutivo**
+
+![Tablero pagina 1](docs/img/tablero_pagina1.png)
+
+**Pagina 2 - Riesgo y severidad**
+
+![Tablero pagina 2](docs/img/tablero_pagina2.png)
+
 Para construirlo manualmente: [powerbi/guia_tablero.md](powerbi/guia_tablero.md)
 (modelo y relaciones) y [powerbi/medidas_dax.md](powerbi/medidas_dax.md) (DAX).
 
