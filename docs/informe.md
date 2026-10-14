@@ -16,7 +16,7 @@ recursos de forma eficiente.
 | Indicador | Valor |
 |---|---|
 | Siniestros totales | 199.146 |
-| Solo danos | 128.207 (64,4%) |
+| Solo daños | 128.207 (64,4%) |
 | Con heridos | 67.700 (34,0%) |
 | Con muertos | 3.239 (1,6%) |
 | Promedio anual | 28.449 |
@@ -53,7 +53,7 @@ recursos de forma eficiente.
 - **SAN CRISTOBAL (53,2%)**, **RAFAEL URIBE URIBE (52,2%)** y **USME (49,9%)**
   presentan la mayor proporcion de siniestros con lesionados, lo que sugiere
   mayor presencia de usuarios vulnerables (motociclistas/peatones).
-- En el norte (Usaquen 22,2%, Chapinero 23,9%) predominan los "solo danos".
+- En el norte (Usaquen 22,2%, Chapinero 23,9%) predominan los "solo daños".
 
 ### 3.5 Puntos criticos
 

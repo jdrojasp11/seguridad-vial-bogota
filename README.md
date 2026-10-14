@@ -117,13 +117,13 @@ python src/analytics.py       # 3. genera KPIs y figuras
   dimensiones y coordenadas (latitud/longitud).
 - `dim_tiempo`: fecha, anio, mes, dia de la semana, hora y franja horaria.
 - `dim_localidad`: 20 localidades + categoria "sin localidad".
-- `dim_gravedad`: SOLO DANOS, CON HERIDOS, CON MUERTOS.
+- `dim_gravedad`: SOLO DAÑOS, CON HERIDOS, CON MUERTOS.
 - `dim_clase`: CHOQUE, ATROPELLO, CAIDA DE OCUPANTE, VOLCAMIENTO, etc.
 - `poblacion_localidad`: poblacion por localidad y anio (para tasas).
 
 ## 7. Resultados principales (2015-2021)
 
-Resumen de 199.146 siniestros: **128.207 solo danos**, **67.700 con heridos** y
+Resumen de 199.146 siniestros: **128.207 solo daños**, **67.700 con heridos** y
 **3.239 con muertos**.
 
 ### 7.1 Tendencia anual

@@ -51,7 +51,7 @@ genero). Si clonas el repo en otra ruta:
 | `TotalSiniestros` | Numero de siniestros |
 | `SiniestrosConHeridos` | Siniestros con heridos |
 | `SiniestrosConMuertos` | Siniestros con muertos |
-| `SiniestrosSoloDanos` | Siniestros solo con danos |
+| `SiniestrosSoloDanos` | Siniestros solo con daños |
 | `PctLesionados` | % de siniestros con lesionados o muertos |
 | `SiniestrosPor100k` | Siniestros por 100.000 habitantes |
 

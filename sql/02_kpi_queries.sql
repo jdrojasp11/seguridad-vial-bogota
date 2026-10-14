@@ -9,7 +9,7 @@ SELECT t.anio,
        COUNT(*) AS siniestros,
        SUM(CASE WHEN g.gravedad = 'CON MUERTOS' THEN 1 ELSE 0 END) AS con_muertos,
        SUM(CASE WHEN g.gravedad = 'CON HERIDOS' THEN 1 ELSE 0 END) AS con_heridos,
-       SUM(CASE WHEN g.gravedad = 'SOLO DANOS' THEN 1 ELSE 0 END) AS solo_danos
+       SUM(CASE WHEN g.gravedad = 'SOLO DAÑOS' THEN 1 ELSE 0 END) AS solo_danos
 FROM fact_siniestros f
 JOIN dim_tiempo t ON t.id_tiempo = f.id_tiempo
 JOIN dim_gravedad g ON g.id_gravedad = f.id_gravedad
@@ -98,7 +98,7 @@ LIMIT 20;
 -- name: severidad_localidad
 SELECT l.nombre_localidad,
        COUNT(*) AS siniestros,
-       ROUND(100.0 * SUM(CASE WHEN g.gravedad <> 'SOLO DANOS' THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_con_lesionados
+       ROUND(100.0 * SUM(CASE WHEN g.gravedad <> 'SOLO DAÑOS' THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_con_lesionados
 FROM fact_siniestros f
 JOIN dim_localidad l ON l.codigo_localidad = f.id_localidad
 JOIN dim_gravedad g ON g.id_gravedad = f.id_gravedad

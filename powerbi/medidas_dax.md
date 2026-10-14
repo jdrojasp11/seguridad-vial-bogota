@@ -14,8 +14,8 @@ CALCULATE ( [Total Siniestros], dim_gravedad[gravedad] = "CON HERIDOS" )
 Total Siniestros con Muertos =
 CALCULATE ( [Total Siniestros], dim_gravedad[gravedad] = "CON MUERTOS" )
 
-Total Solo Danos =
-CALCULATE ( [Total Siniestros], dim_gravedad[gravedad] = "SOLO DANOS" )
+Total Solo Daños =
+CALCULATE ( [Total Siniestros], dim_gravedad[gravedad] = "SOLO DAÑOS" )
 ```
 
 ## Indicadores de severidad

@@ -11,6 +11,8 @@ from config import (
     PROCESSED_DIR, RAW_DIR, SOURCES, DB_PATH, SQL_DIR,
 )
 
+GRAVEDAD_LABELS = {"SOLO DANOS": "SOLO DAÑOS"}
+
 
 def quitar_acentos(texto: str) -> str:
     if texto is None:
@@ -59,6 +61,7 @@ def cargar_siniestros() -> pd.DataFrame:
     df["nombre_mes"] = df["mes"].map(lambda m: MESES[m - 1] if 1 <= m <= 12 else "")
 
     df["GRAVEDAD"] = df["GRAVEDAD"].fillna("SIN DATO").astype(str).str.upper().str.strip()
+    df["GRAVEDAD"] = df["GRAVEDAD"].map(lambda g: GRAVEDAD_LABELS.get(g, g))
     df["CLASE_ACC"] = df["CLASE_ACC"].fillna("SIN DATO").astype(str).str.upper().str.strip()
     df["LOCALIDAD"] = df["LOCALIDAD"].map(normalizar_localidad)
     df["nombre_localidad"] = df["LOCALIDAD"]

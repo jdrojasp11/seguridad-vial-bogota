@@ -9,7 +9,7 @@ table fact_siniestros
 	measure SiniestrosConMuertos = CALCULATE ( [TotalSiniestros], dim_gravedad[gravedad] = "CON MUERTOS" )
 		formatString: #,0
 
-	measure SiniestrosSoloDanos = CALCULATE ( [TotalSiniestros], dim_gravedad[gravedad] = "SOLO DANOS" )
+	measure SiniestrosSoloDanos = CALCULATE ( [TotalSiniestros], dim_gravedad[gravedad] = "SOLO DAÑOS" )
 		formatString: #,0
 
 	measure PctLesionados = DIVIDE ( [SiniestrosConHeridos] + [SiniestrosConMuertos], [TotalSiniestros] )

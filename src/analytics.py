@@ -130,7 +130,7 @@ def fig_heatmap(datos: dict) -> None:
 def fig_severidad(datos: dict) -> None:
     df = datos["resumen_gravedad"]
     fig, ax = plt.subplots(figsize=(6, 5))
-    colores = {"SOLO DANOS": GRIS, "CON HERIDOS": NARANJA, "CON MUERTOS": ROJO}
+    colores = {"SOLO DAÑOS": GRIS, "CON HERIDOS": NARANJA, "CON MUERTOS": ROJO}
     etiquetas = [c if c in colores else GRIS for c in df["gravedad"]]
     ax.pie(df["siniestros"], labels=df["gravedad"], autopct="%1.1f%%",
            colors=[colores.get(g, AZUL) for g in df["gravedad"]],
