@@ -4,6 +4,23 @@ Documento de negocio que resume el analisis de **199.146 siniestros viales**
 registrados por la Secretaria Distrital de Movilidad y la poblacion por localidad
 de la Secretaria Distrital de Salud.
 
+## 0. Resumen ejecutivo
+
+- **Escala:** 199.146 siniestros (2015-2021); el 35,6% dejó lesionados o muertos.
+- **Tendencia:** pico en 2018 (33.418); caída en 2020-2021 asociada a la pandemia
+  (a confirmar con datos post-pandemia).
+- **Hallazgo central:** **el volumen y el riesgo por habitante no coinciden.**
+  El volumen está en el sur-occidente poblado (Kennedy, Engativá); el riesgo
+  relativo está en el centro (Los Mártires, Barrios Unidos, Chapinero).
+- **Prioridad:** con un **índice de doble criterio**, encabezan Chapinero, Puente
+  Aranda, Barrios Unidos, Teusaquillo y Los Mártires.
+- **Tiempo:** la tarde y la mañana, y los viernes, concentran la mayor
+  siniestralidad.
+- **Severidad:** el sur presenta la mayor proporción de lesionados (San
+  Cristóbal 53,2%, Rafael Uribe Uribe 52,2%, Usme 49,9%).
+- **Acción:** focalizar operativos por **corredores y hora pico**, con enfoque
+  diferenciado centro (riesgo) vs. sur (severidad).
+
 ## 1. Contexto
 
 La seguridad vial es una prioridad de salud publica y de movilidad. Con un
@@ -40,6 +57,27 @@ recursos de forma eficiente.
   localidades perifericas.
 - Implicacion: una estrategia basada solo en volumen subestima el riesgo en el
   centro de la ciudad; se recomienda **priorizacion mixta**.
+
+#### 3.2.1 Indice de prioridad (criterio mixto)
+
+Combinando el ranking de volumen y el de tasa por habitante
+(`indice = rank_volumen + rank_riesgo`; menor = mas prioritario) destacan en
+**ambos** criterios:
+
+| # | Localidad | Siniestros | Rank volumen | Tasa x100k | Rank riesgo |
+|---|---|---|---|---|---|
+| 1 | Chapinero | 11.696 | 7 | 7.458 | 3 |
+| 2 | Puente Aranda | 14.143 | 6 | 5.795 | 5 |
+| 3 | Barrios Unidos | 10.094 | 9 | 7.460 | 2 |
+| 4 | Teusaquillo | 10.167 | 8 | 6.956 | 4 |
+| 5 | Los Martires | 6.250 | 12 | 8.457 | 1 |
+| 6 | Usaquen | 19.292 | 3 | 3.538 | 10 |
+| 7 | Kennedy | 23.661 | 1 | 2.295 | 13 |
+
+Las localidades céntricas (Chapinero, Puente Aranda, Barrios Unidos,
+Teusaquillo, Los Martires) combinan volumen medio-alto con el mayor riesgo por
+habitante: son la maxima prioridad de intervencion.
+
 
 ### 3.3 Tiempo
 
