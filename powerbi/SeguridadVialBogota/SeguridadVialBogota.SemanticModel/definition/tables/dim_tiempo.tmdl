@@ -7,7 +7,7 @@ table dim_tiempo
 		sourceColumn: id_tiempo
 
 	column fecha
-		dataType: date
+		dataType: dateTime
 		summarizeBy: none
 		sourceColumn: fecha
 
