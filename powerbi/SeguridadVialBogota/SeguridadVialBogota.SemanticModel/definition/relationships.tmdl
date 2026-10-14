@@ -1,20 +1,20 @@
-relationship 0b4afd9f-0e0b-497f-ae43-b0307888b713
+relationship a7f2b8b6-c36a-40c7-8876-563a8ffda504
 	fromColumn: fact_siniestros.id_tiempo
 	toColumn: dim_tiempo.id_tiempo
 
-relationship 2bb0c451-467a-4bf6-b705-d40ae42b632b
+relationship 1134d3e4-cd8f-4d9e-8ec8-3ace72b01338
 	fromColumn: fact_siniestros.id_localidad
 	toColumn: dim_localidad.codigo_localidad
 
-relationship ec583484-c368-4019-8bd0-d10b786b14c0
+relationship f105ff0e-2aa4-42bc-9f17-5024e81a2155
 	fromColumn: fact_siniestros.id_gravedad
 	toColumn: dim_gravedad.id_gravedad
 
-relationship 59179169-b2fa-48ba-941f-ba2cab674581
+relationship 2608510c-f2b4-41ee-a8f5-12c04eb8ce34
 	fromColumn: fact_siniestros.id_clase
 	toColumn: dim_clase.id_clase
 
-relationship e21c7a7b-81a6-4fb2-a7db-a15bb2ad7c9d
+relationship 6d1ec997-7106-4e40-a80c-e090028d44bc
 	fromColumn: poblacion_localidad.codigo_localidad
 	toColumn: dim_localidad.codigo_localidad
 

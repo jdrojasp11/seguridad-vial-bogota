@@ -18,6 +18,68 @@ table fact_siniestros
 	measure SiniestrosPor100k = DIVIDE ( [TotalSiniestros] * 100000, AVERAGEX ( VALUES ( dim_tiempo[anio] ), CALCULATE ( SUM ( poblacion_localidad[poblacion] ) ) ) )
 		formatString: #,0
 
+	column id_siniestro
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: id_siniestro
+
+	column codigo_accidente
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: codigo_accidente
+
+	column id_tiempo
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: id_tiempo
+
+	column id_localidad
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: id_localidad
+
+	column id_gravedad
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: id_gravedad
+
+	column id_clase
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: id_clase
+
+	column direccion
+		dataType: string
+		summarizeBy: none
+		sourceColumn: direccion
+
+	column latitud
+		dataType: double
+		summarizeBy: none
+		sourceColumn: latitud
+
+	column longitud
+		dataType: double
+		summarizeBy: none
+		sourceColumn: longitud
+
+	column civ
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: civ
+
+	column pk_calzada
+		dataType: double
+		summarizeBy: none
+		sourceColumn: pk_calzada
+
 	partition fact_siniestros = m
 		mode: import
 		source =
