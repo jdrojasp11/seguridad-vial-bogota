@@ -1,0 +1,25 @@
+# Datos
+data/raw/*.csv
+data/processed/fact_siniestros.csv
+data/warehouse.db
+*.db
+*.part
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Power BI
+*.pbix
+*.pbit
+
+# Editores / sistema
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
