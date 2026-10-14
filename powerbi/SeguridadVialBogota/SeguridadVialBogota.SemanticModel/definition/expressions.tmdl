@@ -1,0 +1,2 @@
+expression RutaDatos = "C:\Users\user\Downloads\trabajo\seguridad-vial-bogota\data\processed" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	annotation PBI_ResultType = Text

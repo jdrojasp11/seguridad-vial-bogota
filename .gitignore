@@ -17,6 +17,11 @@ env/
 # Power BI
 *.pbix
 *.pbit
+**/.pbi/
+**/.pbi/cache.abf
+**/localSettings.json
+**/cache.abf
+*.tmp
 
 # Editores / sistema
 .vscode/

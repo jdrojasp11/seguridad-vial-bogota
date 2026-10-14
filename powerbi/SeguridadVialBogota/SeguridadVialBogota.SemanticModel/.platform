@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SeguridadVialBogota"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "aa4fbd5d-3435-4b2f-895f-606e126f1655"
+  }
+}

@@ -1,0 +1,32 @@
+table poblacion_localidad
+
+	column codigo_localidad
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: codigo_localidad
+
+	column anio
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: anio
+
+	column poblacion
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: poblacion
+
+	partition poblacion_localidad = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "\poblacion_localidad.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Remove(_, {Character.FromNumber(65279)})),
+				    Tipado = Table.TransformColumnTypes(Limpio, {{"codigo_localidad", Int64.Type}, {"anio", Int64.Type}, {"poblacion", Int64.Type}})
+				in
+				    Tipado
+
+	annotation PBI_ResultType = Table

@@ -86,6 +86,7 @@ seguridad-vial-bogota/
 │   ├── 01_schema.sql      # DDL del modelo estrella
 │   └── 02_kpi_queries.sql # consultas analiticas (KPIs)
 ├── powerbi/
+│   ├── SeguridadVialBogota/   # proyecto PBIP (abrir en Power BI Desktop)
 │   ├── guia_tablero.md    # paso a paso del tablero
 │   └── medidas_dax.md     # medidas DAX del modelo
 ├── docs/
@@ -182,9 +183,21 @@ Corredores mas criticos: **KR 80 - CL 2 (Kennedy, 213 siniestros)**,
 
 ## 9. Tablero Power BI
 
-Ver [powerbi/guia_tablero.md](powerbi/guia_tablero.md) para construir el tablero
-(modelo, relaciones y visuales) y [powerbi/medidas_dax.md](powerbi/medidas_dax.md)
-para las medidas DAX.
+El tablero se entrega como **proyecto PBIP** (formato de texto) listo para abrir
+en Power BI Desktop:
+
+```
+powerbi/SeguridadVialBogota/SeguridadVialBogota.pbip
+```
+
+Incluye el modelo estrella, las medidas DAX y dos paginas (Resumen ejecutivo y
+Riesgo y severidad). Ver
+[powerbi/SeguridadVialBogota/README.md](powerbi/SeguridadVialBogota/README.md)
+para instrucciones (incluido como ajustar la ruta de datos con el parametro
+`RutaDatos`).
+
+Para construirlo manualmente: [powerbi/guia_tablero.md](powerbi/guia_tablero.md)
+(modelo y relaciones) y [powerbi/medidas_dax.md](powerbi/medidas_dax.md) (DAX).
 
 ## 10. Licencia y atribucion
 

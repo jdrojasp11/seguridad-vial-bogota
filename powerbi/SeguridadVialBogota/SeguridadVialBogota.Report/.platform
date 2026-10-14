@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "SeguridadVialBogota"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "88511b31-1e58-40e9-bae5-1e107d19db98"
+  }
+}

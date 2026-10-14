@@ -1,0 +1,25 @@
+table dim_clase
+
+	column id_clase
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: id_clase
+
+	column clase_accidente
+		dataType: string
+		summarizeBy: none
+		sourceColumn: clase_accidente
+
+	partition dim_clase = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "\dim_clase.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Remove(_, {Character.FromNumber(65279)})),
+				    Tipado = Table.TransformColumnTypes(Limpio, {{"id_clase", Int64.Type}, {"clase_accidente", type text}})
+				in
+				    Tipado
+
+	annotation PBI_ResultType = Table

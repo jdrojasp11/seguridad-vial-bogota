@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "columnclase",
+  "position": {
+    "x": 650,
+    "y": 400,
+    "z": 400,
+    "height": 280,
+    "width": 610,
+    "tabOrder": 400
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_clase"
+                    }
+                  },
+                  "Property": "clase_accidente"
+                }
+              },
+              "queryRef": "dim_clase.clase_accidente",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_siniestros"
+                    }
+                  },
+                  "Property": "TotalSiniestros"
+                }
+              },
+              "queryRef": "fact_siniestros.TotalSiniestros"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
